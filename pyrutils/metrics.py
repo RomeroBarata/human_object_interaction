@@ -1,7 +1,7 @@
 import numpy as np
 
-from pyrfabm.itertools import run_length_encoding
-from pyrfabm.utils import run_length_encoding_intervals
+from pyrutils.itertools import run_length_encoding
+from pyrutils.utils import run_length_encoding_intervals
 
 
 def f1_at_k_single_example(y_true, y_pred, num_classes: int, *, overlap: float) -> float:

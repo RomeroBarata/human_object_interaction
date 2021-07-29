@@ -1,6 +1,9 @@
+from itertools import accumulate
 import os
 import shutil
-from typing import Dict
+from typing import Dict, Iterable
+
+from pyrutils.itertools import run_length_encoding
 
 
 def cleanup_directory(dirpath: str):
@@ -30,3 +33,10 @@ def read_dictionary(filepath: str) -> Dict[str, str]:
             k, v = line.strip().split(sep=' ')
             d[k] = v
     return d
+
+
+def run_length_encoding_intervals(iterable: Iterable):
+    """Return a zip object over the initial (incl.) and final (excl.) indices in the rle of input iterable."""
+    _, lengths = list(zip(*run_length_encoding(iterable)))
+    initial_indices = [0] + list(accumulate(lengths))
+    return zip(initial_indices[:-1], initial_indices[1:])

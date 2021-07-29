@@ -2,7 +2,7 @@ from typing import Optional, Sequence, Union
 
 import torch.nn as nn
 
-from pyrfabm.torch.general import pick_activation_function
+from pyrutils.torch.general import pick_activation_function
 
 
 def build_mlp(dims: Sequence[int], activations: Optional[Sequence[Union[str, dict]]] = None,

@@ -5,8 +5,8 @@ from typing import Optional
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from pyrfabm.torch.fetchers import single_input_single_output
-from pyrfabm.torch.forwarders import basic_forward
+from pyrutils.torch.fetchers import single_input_single_output
+from pyrutils.torch.forwarders import basic_forward
 
 
 def train(model, train_loader, optimizer, criterion, epochs, device, loss_names, clip_gradient_at=0.0,
