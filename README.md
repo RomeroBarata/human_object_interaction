@@ -12,12 +12,12 @@ First please create an appropriate environment using conda:
 Please download the necessary data for the CAD-120 and Bimanual Actions datasets from the link below, and put the 
 downloaded data folder in this current directory (i.e. `./data/...`).
 
-Link: [data](https://deakin365-my.sharepoint.com/:f:/g/personal/romero_morais_deakin_edu_au/Es6_-k7SXN5PkfZJ_AUWglABsh4-nhPDlcNJRZdfkIqkow?e=peCbU8).
+Link: [data](https://bit.ly/3s9NWiB).
 
 Pre-trained models can be found in the link below, and the `outputs` folder should be placed in this current 
 directory as well (i.e. `./outputs/...`).
 
-Link: [models](https://deakin365-my.sharepoint.com/:f:/g/personal/romero_morais_deakin_edu_au/EhP2ydoo3fBGg7d45U0OwIkBkSqUpWIQeJeagBwyrkZoLQ?e=sLfCO8).
+Link: [models](https://bit.ly/3jx7tWh).
 
 ## Test Pre-Trained Models
 Evaluate ASSIGN on CAD-120 dataset:
